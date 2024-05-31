@@ -14,10 +14,10 @@ app.use(function (req, response, next) {
 });
 
 app.post("/sendSMS", (req, res) => {
-    var client = new plivo.Client("MAZGE1NJIZMGFLYJMYMT", "ODNiMmU1NDZjZWFlZjVmNDk5M2E3MDM5OTM5M2Ix");
+    var client = new plivo.Client("", "");
     client.messages.create(
-        "+15709385540",
-        "+923462337076",
+        "+1",
+        "+92",
         "Hello, from Nodejs!",
     ).then(response => {
         console.log(response);
